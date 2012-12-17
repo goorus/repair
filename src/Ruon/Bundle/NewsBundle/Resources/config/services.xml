@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="ruon.news.admin.news" class="Ruon\Bundle\NewsBundle\Admin\NewsAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Новости" label="Новости"/>
+            <argument/>
+            <argument>Ruon\Bundle\NewsBundle\Entity\News</argument>
+            <argument>SonataAdminBundle:CRUD</argument>
+        </service>
+        <service id="ruon.news.admin.newsLink" class="Ruon\Bundle\NewsBundle\Admin\NewsLinkAdmin">
+            <tag name="sonata.admin" manager_type="orm" show_in_dashboard="false" />
+            <argument/>
+            <argument>Ruon\Bundle\NewsBundle\Entity\NewsLink</argument>
+            <argument>SonataAdminBundle:CRUD</argument>
+        </service>
+        <service id="ruon.news.admin.newsCategory" class="Ruon\Bundle\NewsBundle\Admin\NewsCategoryAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Новости" label="Категории новостей"/>
+            <argument/>
+            <argument>Ruon\Bundle\NewsBundle\Entity\NewsCategory</argument>
+            <argument>SonataAdminBundle:CRUD</argument>
+        </service>
+    </services>
+    
+</container>
