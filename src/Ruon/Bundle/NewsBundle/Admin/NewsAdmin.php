@@ -26,7 +26,7 @@ class NewsAdmin extends Admin
                 ->add('title', null, array('label' => 'Заголовок'))
                 ->add('announce', null, array('label' => 'Анонс'))
                 ->add('text', null, array('label' => 'Текст'))
-                ->add('pubDate', null, array('label' => 'Дата публикации'))
+                ->add('publicTime', null, array('label' => 'Дата публикации'))
                 ->add('newsLinks', null, array('label' => 'Ссылки к новости'))
                 ->add('newsCategory', null, array('label' => 'Идентификатор'));
     }
@@ -42,7 +42,7 @@ class NewsAdmin extends Admin
                 ->add('title', null, array('label' => 'Заголовок'))
                 ->add('announce', null, array('label' => 'Анонс'))
                 ->add('text', null, array('label' => 'Текст'))
-                ->add('pubDate', null, array('label' => 'Дата публикации'))
+                ->add('publicTime', null, array('label' => 'Дата публикации'))
 
         //by_reference используется для того чтобы при трансформации данных запроса в объект сущности
         //которую выполняет Symfony Form Framework, использовался setter сущности News::setNewsLinks
@@ -58,7 +58,7 @@ class NewsAdmin extends Admin
                 ->add('newsCategory', null, array('label' => 'Категория'))
                 ->setHelps(array(
                                 'title' => 'Подсказка по заголовку',
-                                'pubDate' => 'Дата публикации новости на сайте'
+                                'publicTime' => 'Дата публикации новости на сайте'
                            ));
     }
 
@@ -73,7 +73,7 @@ class NewsAdmin extends Admin
         $listMapper
                 ->addIdentifier('id')
                 ->addIdentifier('title', null, array('label' => 'Заголовок'))
-                ->add('pubDate', null, array('label' => 'Дата публикации'))
+                ->add('publicTime', null, array('label' => 'Дата публикации'))
                 ->add('newsCategory', null, array('label' => 'Категория'));
     }
 

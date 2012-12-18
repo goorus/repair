@@ -20,7 +20,7 @@ class NewsCategoryAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-                ->add('name', null, array('label' => 'Название'));
+            ->add('name', null, array('label' => 'Название'));
     }
 
     /**
@@ -32,9 +32,8 @@ class NewsCategoryAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-                ->addIdentifier('id')
-                ->addIdentifier('name', null, array('label' => 'Название'));
-
+            ->addIdentifier('id')
+            ->addIdentifier('name', null, array('label' => 'Название'));
     }
 
     /**
@@ -46,6 +45,6 @@ class NewsCategoryAdmin extends Admin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-                ->add('name', null, array('label' => 'Название'));
+            ->add('name', null, array('label' => 'Название'));
     }
 }

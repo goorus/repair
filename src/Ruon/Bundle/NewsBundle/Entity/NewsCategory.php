@@ -5,7 +5,7 @@ namespace Ruon\Bundle\NewsBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * 
+ *
  *
  * @ORM\Table(name="news_category")
  * @ORM\Entity
@@ -15,7 +15,7 @@ class NewsCategory
     /**
      * @var integer $id
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
@@ -24,13 +24,13 @@ class NewsCategory
     /**
      * @var string $name
      *
-     * @ORM\Column(name="name", type="string", length=45, nullable=true)
+     * @ORM\Column(name="name", type="string", length=64)
      */
     private $name;
 
 
 
-    function __toString()
+    public function __toString()
     {
         return $this->getName();
     }

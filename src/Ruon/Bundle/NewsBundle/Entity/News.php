@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * 
+ *
  *
  * @ORM\Table(name="news")
  * @ORM\Entity
@@ -14,82 +14,81 @@ use Symfony\Component\Validator\Constraints as Assert;
 class News
 {
     /**
-     * @var integer $id
+     * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Column(type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @var string $title
+     * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255, nullable=true)
+     * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank
      */
     private $title;
 
     /**
-     * @var text $announce
+     * @var string
      *
-     * @ORM\Column(name="announce", type="text", nullable=true)
+     * @ORM\Column(type="text")
      */
     private $announce;
 
     /**
-     * @var text $text
+     * @var string
      *
-     * @ORM\Column(name="text", type="text", nullable=true)
+     * @ORM\Column(type="text")
      */
     private $text;
 
     /**
-     * @var datetime $createdAt
+     * @var \DateTime
      *
-     * @ORM\Column(name="created_at", type="datetime", nullable=true)
+     * @ORM\Column(type="datetime")
      */
-    private $createdAt;
+    private $created;
 
     /**
-     * @var datetime $updatedAt
+     * @var \DateTime
      *
-     * @ORM\Column(name="updated_at", type="datetime", nullable=true)
+     * @ORM\Column(type="datetime")
      */
-    private $updatedAt;
+    private $updated;
 
     /**
-     * @var date $pubDate
+     * @var \DateTime
      *
-     * @ORM\Column(name="pub_date", type="date", nullable=true)
+     * @ORM\Column(type="datetime")
      */
-    private $pubDate;
+    private $publicTime;
 
     /**
-     * @var $newsCategory
+     * @var \Ruon\Bundle\NewsBundle\Entity\NewsCategory
      *
      * @ORM\ManyToOne(targetEntity="NewsCategory")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="news_category_id", referencedColumnName="id")
-     * })
+     *      @ORM\JoinColumn(name="newsCategoryId", referencedColumnName="id")
      * })
      * @Assert\NotBlank
      */
     private $newsCategory;
 
     /**
-     * @var $newsLinks
+     * @var \Doctrine\Common\Collections\ArrayCollection
      *
      * @ORM\OneToMany(targetEntity="NewsLink", mappedBy="news", cascade={"all"}, orphanRemoval=true)
      * @ORM\OrderBy({"pos" = "ASC"})
      */
     protected $newsLinks;
 
-
-
-    function __construct()
+    public function __construct()
     {
-       $this->newsLinks = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->created = new \DateTime('now');
+        $this->updated = new \DateTime('now');
+        $this->newsLinks = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -165,76 +164,81 @@ class News
     /**
      * Set createdAt
      *
-     * @param datetime $createdAt
+     * @param datetime $created
      */
-    public function setCreatedAt($createdAt)
+    public function setCreated($created)
     {
-        $this->createdAt = $createdAt;
+        $this->created = $created;
     }
 
     /**
-     * Get createdAt
+     * Get created
      *
-     * @return datetime
+     * @return \DateTime
      */
-    public function getCreatedAt()
+    public function getCreated()
     {
-        return $this->createdAt;
+        return $this->created;
     }
 
     /**
-     * Set updatedAt
+     * Set updated
      *
-     * @param datetime $updatedAt
+     * @param \DateTime|string $updated
      */
-    public function setUpdatedAt($updatedAt)
+    public function setUpdated($updated)
     {
-        $this->updatedAt = $updatedAt;
+        $this->updated = is_object($updated)
+            ? $updated
+            : new \DateTime($updated);
     }
 
     /**
-     * Get updatedAt
+     * Get updated
      *
-     * @return datetime
+     * @return \DateTime
      */
-    public function getUpdatedAt()
+    public function getUpdated()
     {
-        return $this->updatedAt;
+        return $this->updated;
     }
 
     /**
-     * Set pubDate
+     * Set publicTime
      *
-     * @param date $pubDate
+     * @param \DateTime $publicTime
      */
-    public function setPubDate($pubDate)
+    public function setPublicTime($publicTime)
     {
-        $this->pubDate = $pubDate;
+        $this->publicTime = $publicTime;
     }
 
     /**
-     * Get pubDate
+     * Get publicTime
      *
-     * @return date
+     * @return \DateTime
      */
-    public function getPubDate()
+    public function getPublicTime()
     {
-        return $this->pubDate;
+        return $this->publicTime;
     }
 
 
-
+    /**
+     *
+     * @return string
+     */
     public function getPubYear()
     {
-        return $this->pubDate->format ('Y');
+        return $this->publicTime->format('Y');
     }
 
     /**
      * Set newsCategory
      *
-     * @param Test\NewsBundle\Entity\NewsCategory $newsCategory
+     * @param \Ruon\Bundle\NewsBundle\Entity\NewsCategory $newsCategory
      */
-    public function setNewsCategory(\Test\NewsBundle\Entity\NewsCategory $newsCategory)
+    public function setNewsCategory(\Ruon\Bundle\NewsBundle\Entity\NewsCategory $newsCategory)
     {
         $this->newsCategory = $newsCategory;
     }
@@ -242,7 +246,7 @@ class News
     /**
      * Get newsCategory
      *
-     * @return Test\NewsBundle\Entity\NewsCategory
+     * @return \Ruon\Bundle\NewsBundle\Entity\NewsCategory
      */
     public function getNewsCategory()
     {
@@ -252,9 +256,9 @@ class News
     /**
      * Add newsLinks
      *
-     * @param Test\NewsBundle\Entity\NewsLink $newsLinks
+     * @param \Ruon\Bundle\NewsBundle\Entity\NewsLink $newsLinks
      */
-    public function addNewsLinks(\Test\NewsBundle\Entity\NewsLink $newsLinks)
+    public function addNewsLinks(\Ruon\Bundle\NewsBundle\Entity\NewsLink $newsLinks)
     {
         $this->newsLinks[] = $newsLinks;
     }

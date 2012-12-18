@@ -1,5 +1,5 @@
 {
-    "hash": "669660d8dd17141d637c361d0e0c80e0",
+    "hash": "215f1e150e87dcbeec3f2c979997f4fa",
     "packages": [
         {
             "name": "doctrine/common",
@@ -203,6 +203,116 @@
             ]
         },
         {
+            "name": "doctrine/doctrine-migrations-bundle",
+            "version": "dev-master",
+            "target-dir": "Doctrine/Bundle/MigrationsBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
+                "reference": "e494aceebe05200c3f5e7b54c9facf2cf0b2099c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/DoctrineMigrationsBundle/archive/e494aceebe05200c3f5e7b54c9facf2cf0b2099c.zip",
+                "reference": "e494aceebe05200c3f5e7b54c9facf2cf0b2099c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "doctrine/migrations": "*",
+                "symfony/framework-bundle": ">=2.1.0,<2.3-dev",
+                "doctrine/doctrine-bundle": "1.0.*"
+            },
+            "time": "2012-10-18 12:04:30",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Bundle\\MigrationsBundle": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "http://www.doctrine-project.org"
+                }
+            ],
+            "description": "Symfony DoctrineMigrationsBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "dbal",
+                "migrations",
+                "schema"
+            ]
+        },
+        {
+            "name": "doctrine/migrations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/migrations",
+                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/migrations/archive/c1d875ce7d092dd1bc7508c3867b5c6b97431e43.zip",
+                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "doctrine/dbal": ">=2.0,<2.5.x-dev"
+            },
+            "require-dev": {
+                "symfony/console": "2.*",
+                "symfony/yaml": "2.*"
+            },
+            "suggest": {
+                "symfony/console": "to run the migration from the console"
+            },
+            "time": "2012-10-19 10:37:24",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\DBAL\\Migrations": "lib"
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Database Schema migrations using Doctrine DBAL",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "migrations"
+            ]
+        },
+        {
             "name": "doctrine/orm",
             "version": "2.3.1",
             "source": {
@@ -280,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle",
-                "reference": "6d1fe1bad7621e618a379aebc45b36e080e7eca8"
+                "reference": "779386c3fa2193347d2cd890f5687c5ee45f0bbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/6d1fe1bad7621e618a379aebc45b36e080e7eca8.zip",
-                "reference": "6d1fe1bad7621e618a379aebc45b36e080e7eca8",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/779386c3fa2193347d2cd890f5687c5ee45f0bbe.zip",
+                "reference": "779386c3fa2193347d2cd890f5687c5ee45f0bbe",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +416,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
-            "time": "2012-12-11 10:26:01",
+            "time": "2012-12-18 11:41:10",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -720,12 +830,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/kriswallsmith/assetic.git",
-                "reference": "cec1723d54ea9961274cb72e8b53e9b482002c8a"
+                "reference": "8ca1861fbed58e2c6ffcca5c0a1726c40a10a77c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/kriswallsmith/assetic/archive/cec1723d54ea9961274cb72e8b53e9b482002c8a.zip",
-                "reference": "cec1723d54ea9961274cb72e8b53e9b482002c8a",
+                "url": "https://github.com/kriswallsmith/assetic/archive/8ca1861fbed58e2c6ffcca5c0a1726c40a10a77c.zip",
+                "reference": "8ca1861fbed58e2c6ffcca5c0a1726c40a10a77c",
                 "shasum": ""
             },
             "require": {
@@ -746,7 +856,7 @@
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
             },
-            "time": "2012-12-12 17:18:34",
+            "time": "2012-12-14 18:31:26",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -985,12 +1095,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "91c5e7c04557695430b45ac8bfd4ea25a48b1b82"
+                "reference": "9b470e2782b72377565af912274fbc4601847a8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataAdminBundle/archive/91c5e7c04557695430b45ac8bfd4ea25a48b1b82.zip",
-                "reference": "91c5e7c04557695430b45ac8bfd4ea25a48b1b82",
+                "url": "https://github.com/sonata-project/SonataAdminBundle/archive/9b470e2782b72377565af912274fbc4601847a8c.zip",
+                "reference": "9b470e2782b72377565af912274fbc4601847a8c",
                 "shasum": ""
             },
             "require": {
@@ -1015,7 +1125,7 @@
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master",
                 "sonata-project/intl-bundle": "dev-master"
             },
-            "time": "2012-12-10 09:49:22",
+            "time": "2012-12-17 13:34:17",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1324,12 +1434,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter",
-                "reference": "75174b5a41f1014ecb4b4810a518f036b830d862"
+                "reference": "a95d2edc789ffc83b87a2ba3b69c775d343ec9a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/exporter/archive/75174b5a41f1014ecb4b4810a518f036b830d862.zip",
-                "reference": "75174b5a41f1014ecb4b4810a518f036b830d862",
+                "url": "https://github.com/sonata-project/exporter/archive/a95d2edc789ffc83b87a2ba3b69c775d343ec9a0.zip",
+                "reference": "a95d2edc789ffc83b87a2ba3b69c775d343ec9a0",
                 "shasum": ""
             },
             "require": {
@@ -1338,7 +1448,7 @@
             "suggest": {
                 "ext-curl": "*"
             },
-            "time": "2012-09-06 21:39:49",
+            "time": "2012-12-14 12:45:51",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -1846,18 +1956,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig-extensions",
-                "reference": "dcdff02fbac1282e6b8f4d0558cc7e9580105688"
+                "reference": "d1990ffaca93302709d1306d50ae153adb169f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig-extensions/archive/dcdff02fbac1282e6b8f4d0558cc7e9580105688.zip",
-                "reference": "dcdff02fbac1282e6b8f4d0558cc7e9580105688",
+                "url": "https://github.com/fabpot/Twig-extensions/archive/d1990ffaca93302709d1306d50ae153adb169f49.zip",
+                "reference": "d1990ffaca93302709d1306d50ae153adb169f49",
                 "shasum": ""
             },
             "require": {
                 "twig/twig": "1.*"
             },
-            "time": "2012-10-10 10:13:26",
+            "time": "2012-12-15 09:26:10",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1870,6 +1980,7 @@
                     "Twig_Extensions_": "lib/"
                 }
             },
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1955,6 +2066,8 @@
         "sonata-project/doctrine-extensions": 20,
         "sonata-project/easy-extends-bundle": 20,
         "sonata-project/google-authenticator": 20,
-        "sonata-project/user-bundle": 20
+        "sonata-project/user-bundle": 20,
+        "doctrine/migrations": 20,
+        "doctrine/doctrine-migrations-bundle": 20
     }
 }
