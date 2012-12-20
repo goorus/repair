@@ -45,10 +45,18 @@ doctrine:
         user:     "%database_user%"
         password: "%database_password%"
         charset:  UTF8
+        types:
+            json: Sonata\Doctrine\Types\JsonType
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+        entity_managers:
+            default:
+                mappings:
+                    FOSUserBundle: ~
+                    ApplicationSonataUserBundle: ~
+                    SonataUserBundle: ~
+                    RuonNewsBundle: ~
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -72,7 +80,14 @@ sonata_block:
         sonata.block.service.action:
         sonata.block.service.rss:
 
+sonata_user:
+    security_acl: true
+
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
-    user_class: Ruon\Bundle\RepairBundle\Entity\User
+    user_class:     Application\Sonata\UserBundle\Entity\User
+
+    group:
+        group_class: Application\Sonata\UserBundle\Entity\Group
+
