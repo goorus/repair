@@ -1,6 +1,10 @@
 imports:
     - { resource: config.yml }
 
+sonata_page:
+    # без этого в дебаг режиме симфоневский тулбар не показывается
+    use_streamed_response: false # set the value to false in debug mode or if the reverse proxy does not handle streamed response
+
 framework:
     router:   { resource: "%kernel.root_dir%/config/routing_dev.yml" }
     profiler: { only_exceptions: false }

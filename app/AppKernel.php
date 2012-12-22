@@ -28,10 +28,15 @@ class AppKernel extends Kernel
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Sonata\PageBundle\SonataPageBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
+            new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            new Symfony\Cmf\Bundle\RoutingExtraBundle\SymfonyCmfRoutingExtraBundle(),
             new Ruon\Bundle\RepairBundle\RuonRepairBundle(),
             new Ruon\Bundle\NewsBundle\RuonNewsBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+            new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

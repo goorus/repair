@@ -1,5 +1,5 @@
 {
-    "hash": "4f789f917b09d5a364bc47741cc7cf76",
+    "hash": "fb8cdc5cbc04dc97d8c6e29ae1873a44",
     "packages": [
         {
             "name": "doctrine/common",
@@ -1580,6 +1580,171 @@
             ]
         },
         {
+            "name": "sonata-project/notification-bundle",
+            "version": "dev-master",
+            "target-dir": "Sonata/NotificationBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataNotificationBundle",
+                "reference": "9c167fc3ed32e91694a8c25a3ef56166ec66c7e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/sonata-project/SonataNotificationBundle/archive/9c167fc3ed32e91694a8c25a3ef56166ec66c7e0.zip",
+                "reference": "9c167fc3ed32e91694a8c25a3ef56166ec66c7e0",
+                "shasum": ""
+            },
+            "require": {
+                "sonata-project/doctrine-extensions": "dev-master",
+                "symfony/symfony": ">=2.1,<2.3-dev"
+            },
+            "require-dev": {
+                "videlalvaro/php-amqplib": "dev-master",
+                "liip/monitor-bundle": "dev-master"
+            },
+            "suggest": {
+                "videlalvaro/php-amqplib": "*",
+                "guzzle/guzzle": "*",
+                "liip/monitor": "*"
+            },
+            "time": "2012-12-14 14:53:06",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Sonata\\NotificationBundle": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataNotificationBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataNotificationBundle",
+            "homepage": "http://sonata-project.org/bundles/page",
+            "keywords": [
+                "page",
+                "sonata",
+                "cms"
+            ]
+        },
+        {
+            "name": "sonata-project/page-bundle",
+            "version": "dev-master",
+            "target-dir": "Sonata/PageBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataPageBundle",
+                "reference": "fc4b3274f3590c6615a2c13e2e314756901bf89a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/sonata-project/SonataPageBundle/archive/fc4b3274f3590c6615a2c13e2e314756901bf89a.zip",
+                "reference": "fc4b3274f3590c6615a2c13e2e314756901bf89a",
+                "shasum": ""
+            },
+            "require": {
+                "sonata-project/admin-bundle": "dev-master",
+                "sonata-project/seo-bundle": "dev-master",
+                "sonata-project/notification-bundle": "dev-master",
+                "sonata-project/doctrine-extensions": "dev-master",
+                "symfony-cmf/routing-extra-bundle": "1.0.*",
+                "sonata-project/cache-bundle": "dev-master"
+            },
+            "suggest": {
+                "sonata-project/doctrine-orm-admin-bundle": "dev-master"
+            },
+            "time": "2012-12-21 14:58:45",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Sonata\\PageBundle": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataPageBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataPageBundle",
+            "homepage": "http://sonata-project.org/bundles/page",
+            "keywords": [
+                "page",
+                "sonata",
+                "cms"
+            ]
+        },
+        {
+            "name": "sonata-project/seo-bundle",
+            "version": "dev-master",
+            "target-dir": "Sonata/SeoBundle",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/sonata-project/SonataSeoBundle.git",
+                "reference": "320340ef91b1dd75df0e8b2d6939fcc1c7895ddb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/sonata-project/SonataSeoBundle/archive/320340ef91b1dd75df0e8b2d6939fcc1c7895ddb.zip",
+                "reference": "320340ef91b1dd75df0e8b2d6939fcc1c7895ddb",
+                "shasum": ""
+            },
+            "require": {
+                "twig/twig": "*",
+                "symfony/symfony": "2.*"
+            },
+            "time": "2012-12-14 12:30:11",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Sonata\\SeoBundle": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "http://sonata-project.org"
+                },
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataSeoBundle/contributors"
+                }
+            ],
+            "description": "Symfony SonataSeoBundle",
+            "homepage": "http://sonata-project.org/bundles/seo",
+            "keywords": [
+                "sonata",
+                "seo"
+            ]
+        },
+        {
             "name": "sonata-project/user-bundle",
             "version": "dev-master",
             "target-dir": "Sonata/UserBundle",
@@ -1595,7 +1760,7 @@
                     "Sonata\\UserBundle": ""
                 }
             },
-            "time": "2012-12-03 15:43:08"
+            "time": "2012-12-22 08:56:44"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1644,6 +1809,123 @@
             "keywords": [
                 "mail",
                 "mailer"
+            ]
+        },
+        {
+            "name": "symfony-cmf/routing",
+            "version": "dev-master",
+            "target-dir": "Symfony/Cmf/Component/Routing",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony-cmf/Routing",
+                "reference": "1.0.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony-cmf/Routing/archive/1.0.0-alpha3.zip",
+                "reference": "1.0.0-alpha3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/routing": ">=2.1,<2.3-dev",
+                "symfony/http-kernel": ">=2.1,<2.3-dev"
+            },
+            "time": "2012-12-16 17:52:57",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Cmf\\Component\\Routing": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/Routing/contributors"
+                }
+            ],
+            "description": "Extends the Symfony2 routing component for dynamic routes and chaining several routers",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "database",
+                "routing"
+            ]
+        },
+        {
+            "name": "symfony-cmf/routing-extra-bundle",
+            "version": "dev-master",
+            "target-dir": "Symfony/Cmf/Bundle/RoutingExtraBundle",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/symfony-cmf/RoutingExtraBundle.git",
+                "reference": "1.0.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony-cmf/RoutingExtraBundle/archive/1.0.0-alpha3.zip",
+                "reference": "1.0.0-alpha3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": ">=2.1,<2.3-dev",
+                "symfony/monolog-bundle": ">=2.1,<2.3-dev",
+                "symfony-cmf/routing": ">=1.0.0-alpha3"
+            },
+            "require-dev": {
+                "doctrine/phpcr-odm": "1.0.*",
+                "doctrine/phpcr-bundle": "1.0.*",
+                "jackalope/jackalope-doctrine-dbal": "1.0.*",
+                "doctrine/doctrine-bundle": "1.0.*",
+                "symfony/class-loader": ">=2.1,<2.3-dev",
+                "symfony/yaml": ">=2.1,<2.3-dev",
+                "symfony/form": ">=2.1,<2.3-dev",
+                "symfony/finder": ">=2.1,<2.3-dev"
+            },
+            "suggest": {
+                "doctrine/phpcr-odm": "To enable support for the PHPCR ODM documents",
+                "doctrine/phpcr-bundle": "To enable support for the PHPCR ODM documents",
+                "symfony-cmf/content-bundle": "To optionally use the configured value for 'content_basepath' from the CoreBundle",
+                "sonata-project/doctrine-phpcr-admin-bundle": "To provide an admin interface for the PHPCR ODM documents"
+            },
+            "time": "2012-12-16 18:32:39",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Cmf\\Bundle\\RoutingExtraBundle": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony CMF Community",
+                    "homepage": "https://github.com/symfony-cmf/RoutingExtraBundle/contributors"
+                }
+            ],
+            "description": "Symfony RoutingExtraBundle",
+            "homepage": "http://cmf.symfony.com",
+            "keywords": [
+                "database",
+                "routing"
             ]
         },
         {
@@ -2014,20 +2296,25 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/migrations": 20,
         "twig/extensions": 20,
+        "symfony-cmf/routing": 20,
+        "symfony-cmf/routing-extra-bundle": 20,
         "kriswallsmith/assetic": 20,
-        "sonata-project/cache-bundle": 20,
-        "sonata-project/block-bundle": 20,
-        "sonata-project/jquery-bundle": 20,
-        "sonata-project/exporter": 20,
-        "sonata-project/admin-bundle": 20,
-        "sonata-project/doctrine-orm-admin-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
+        "sonata-project/admin-bundle": 20,
+        "sonata-project/block-bundle": 20,
+        "sonata-project/cache-bundle": 20,
+        "sonata-project/doctrine-orm-admin-bundle": 20,
         "sonata-project/doctrine-extensions": 20,
         "sonata-project/easy-extends-bundle": 20,
+        "sonata-project/exporter": 20,
         "sonata-project/google-authenticator": 20,
-        "sonata-project/user-bundle": 20,
-        "doctrine/migrations": 20,
-        "doctrine/doctrine-migrations-bundle": 20
+        "sonata-project/jquery-bundle": 20,
+        "sonata-project/page-bundle": 20,
+        "sonata-project/seo-bundle": 20,
+        "sonata-project/notification-bundle": 20,
+        "sonata-project/user-bundle": 20
     }
 }
