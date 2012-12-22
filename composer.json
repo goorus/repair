@@ -35,6 +35,22 @@
         "doctrine/migrations": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "sonata-project/user-bundle",
+                "version": "dev-master",
+                "autoload": { "psr-0": { "Sonata\\UserBundle": "" } },
+                "target-dir": "Sonata/UserBundle",
+                "source": {
+                    "url": "http://github.com/goorus/SonataUserBundle.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",

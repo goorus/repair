@@ -12,4 +12,5 @@ parameters:
     mailer_password:   ~
 
     locale:            en
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret: 6eee7846a98264169446ca04632bb862
+    database_path: ~

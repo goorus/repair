@@ -1,5 +1,5 @@
 {
-    "hash": "c1ca8e9cf3928cf16b4bdae1d9096135",
+    "hash": "4f789f917b09d5a364bc47741cc7cf76",
     "packages": [
         {
             "name": "doctrine/common",
@@ -1167,12 +1167,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle",
-                "reference": "60b12fd035b8f2e68f1ead4800dd4e6253800028"
+                "reference": "d15f0c30a55142e4a16c6df1040125bb5582870b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataBlockBundle/archive/60b12fd035b8f2e68f1ead4800dd4e6253800028.zip",
-                "reference": "60b12fd035b8f2e68f1ead4800dd4e6253800028",
+                "url": "https://github.com/sonata-project/SonataBlockBundle/archive/d15f0c30a55142e4a16c6df1040125bb5582870b.zip",
+                "reference": "d15f0c30a55142e4a16c6df1040125bb5582870b",
                 "shasum": ""
             },
             "require": {
@@ -1187,7 +1187,7 @@
                 "sonata-project/admin-bundle": "dev-master",
                 "sonata-project/cache-bundle": "dev-master"
             },
-            "time": "2012-12-05 10:46:30",
+            "time": "2012-12-21 19:45:49",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1224,12 +1224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCacheBundle",
-                "reference": "d4060e0599f24b096885c7070c194e2c27598bc3"
+                "reference": "2d8e5f615bcfa3679f7e438c3250fcb1f82e5281"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataCacheBundle/archive/d4060e0599f24b096885c7070c194e2c27598bc3.zip",
-                "reference": "d4060e0599f24b096885c7070c194e2c27598bc3",
+                "url": "https://github.com/sonata-project/SonataCacheBundle/archive/2d8e5f615bcfa3679f7e438c3250fcb1f82e5281.zip",
+                "reference": "2d8e5f615bcfa3679f7e438c3250fcb1f82e5281",
                 "shasum": ""
             },
             "require": {
@@ -1249,7 +1249,7 @@
                 "ext-apc": "Caching with ext/apc",
                 "ext-memcached": "Caching with ext/memcached"
             },
-            "time": "2012-10-23 23:05:43",
+            "time": "2012-12-21 20:01:36",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1585,59 +1585,17 @@
             "target-dir": "Sonata/UserBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sonata-project/SonataUserBundle",
-                "reference": "92a144c020ff5e9eb6c89a4afcdb79131eadaf20"
+                "url": "http://github.com/goorus/SonataUserBundle.git",
+                "reference": "master"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/sonata-project/SonataUserBundle/archive/92a144c020ff5e9eb6c89a4afcdb79131eadaf20.zip",
-                "reference": "92a144c020ff5e9eb6c89a4afcdb79131eadaf20",
-                "shasum": ""
-            },
-            "require": {
-                "friendsofsymfony/user-bundle": "dev-master",
-                "sonata-project/doctrine-extensions": "dev-master",
-                "sonata-project/admin-bundle": "dev-master",
-                "sonata-project/easy-extends-bundle": "dev-master",
-                "symfony/http-foundation": ">=2.1,<2.3-dev",
-                "symfony/form": ">=2.1,<2.3-dev",
-                "symfony/security": ">=2.1,<2.3-dev",
-                "symfony/console": ">=2.1,<2.3-dev",
-                "sonata-project/google-authenticator": "dev-master"
-            },
-            "suggest": {
-                "sonata-project/doctrine-orm-admin-bundle": "dev-master"
-            },
-            "time": "2012-12-03 15:43:08",
-            "type": "symfony-bundle",
+            "type": "library",
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Sonata\\UserBundle": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas Rabaix",
-                    "email": "thomas.rabaix@sonata-project.org",
-                    "homepage": "http://sonata-project.org"
-                },
-                {
-                    "name": "Sonata Community",
-                    "homepage": "https://github.com/sonata-project/SonataUserBundle/contributors"
-                }
-            ],
-            "description": "Symfony SonataUserBundle",
-            "homepage": "http://sonata-project.org/bundles/user",
-            "keywords": [
-                "sonata",
-                "user",
-                "google authenticator"
-            ]
+            "time": "2012-12-03 15:43:08"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1865,16 +1823,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.1.5",
+            "version": "v2.1.6",
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "v2.1.5"
+                "reference": "v2.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/archive/v2.1.5.zip",
-                "reference": "v2.1.5",
+                "url": "https://github.com/symfony/symfony/archive/v2.1.6.zip",
+                "reference": "v2.1.6",
                 "shasum": ""
             },
             "require": {
@@ -1923,7 +1881,7 @@
                 "propel/propel1": "dev-master",
                 "monolog/monolog": "1.*"
             },
-            "time": "2012-12-20 14:27:50",
+            "time": "2012-12-21 10:24:53",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
