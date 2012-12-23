@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: services.yml }
 
 framework:
     #esi:             ~
@@ -79,7 +80,7 @@ sonata_block:
             contexts:   [admin]
 
         sonata.block.service.text:
-        sonata.block.service.action:
+#        sonata.block.service.action:
         sonata.block.service.rss:
 
 symfony_cmf_routing_extra:
@@ -134,4 +135,12 @@ fos_user:
 
     group:
         group_class: Application\Sonata\UserBundle\Entity\Group
+
+    from_email:
+        address:        webmaster@example.com
+        sender_name:    Admin
+
+    registration:
+        form:
+            type: repair_user_registration
 

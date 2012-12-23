@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@ApplicationSonataUserBundle/Resources/config/services.xml" }

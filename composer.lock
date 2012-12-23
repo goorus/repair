@@ -1,5 +1,5 @@
 {
-    "hash": "fb8cdc5cbc04dc97d8c6e29ae1873a44",
+    "hash": "9cb7fca33f6bd5523b2937103a8a5e5d",
     "packages": [
         {
             "name": "doctrine/common",
@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle",
-                "reference": "af60afd29a9007cebd7fd5271efe2ce22e886c37"
+                "reference": "618b95d373f67c075a0d6f61339066bb061a0b71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/af60afd29a9007cebd7fd5271efe2ce22e886c37.zip",
-                "reference": "af60afd29a9007cebd7fd5271efe2ce22e886c37",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/618b95d373f67c075a0d6f61339066bb061a0b71.zip",
+                "reference": "618b95d373f67c075a0d6f61339066bb061a0b71",
                 "shasum": ""
             },
             "require": {
@@ -416,7 +416,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
-            "time": "2012-12-20 17:26:02",
+            "time": "2012-12-22 15:52:39",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1167,12 +1167,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle",
-                "reference": "d15f0c30a55142e4a16c6df1040125bb5582870b"
+                "reference": "92b2bfd445bc83a0fa7149ef760fa0d0f2587845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataBlockBundle/archive/d15f0c30a55142e4a16c6df1040125bb5582870b.zip",
-                "reference": "d15f0c30a55142e4a16c6df1040125bb5582870b",
+                "url": "https://github.com/sonata-project/SonataBlockBundle/archive/92b2bfd445bc83a0fa7149ef760fa0d0f2587845.zip",
+                "reference": "92b2bfd445bc83a0fa7149ef760fa0d0f2587845",
                 "shasum": ""
             },
             "require": {
@@ -1187,7 +1187,7 @@
                 "sonata-project/admin-bundle": "dev-master",
                 "sonata-project/cache-bundle": "dev-master"
             },
-            "time": "2012-12-21 19:45:49",
+            "time": "2012-12-23 13:10:09",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {

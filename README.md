@@ -1,5 +1,5 @@
 # download vendor packages
-composer update
+composer install
 
 # create database structure
 php app/console doctrine:migrations:migrate
