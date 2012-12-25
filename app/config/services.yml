@@ -1,2 +1,3 @@
 imports:
     - { resource: "@ApplicationSonataUserBundle/Resources/config/services.xml" }
+    - { resource: "@RuonRepairBundle/Resources/config/services.xml" }

@@ -8,13 +8,13 @@
     <parameters>
         <parameter key="ruon_repair.example.class">Ruon\Bundle\RepairBundle\Example</parameter>
     </parameters>
-
+    -->
     <services>
-        <service id="ruon_repair.example" class="%ruon_repair.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="ruon_repair.service.main_menu" class="Ruon\Bundle\RepairBundle\Block\Service\MainMenuBlockService" public="true">
+            <tag name="sonata.block" />
+            <argument>ruon_repair.service.main_menu</argument>
+            <argument type="service" id="templating" />
         </service>
     </services>
-    -->
+
 </container>
