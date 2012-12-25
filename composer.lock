@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle",
-                "reference": "618b95d373f67c075a0d6f61339066bb061a0b71"
+                "reference": "8a129b88ab18b9b2d1518ac40937ecfafd4aac53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/618b95d373f67c075a0d6f61339066bb061a0b71.zip",
-                "reference": "618b95d373f67c075a0d6f61339066bb061a0b71",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/8a129b88ab18b9b2d1518ac40937ecfafd4aac53.zip",
+                "reference": "8a129b88ab18b9b2d1518ac40937ecfafd4aac53",
                 "shasum": ""
             },
             "require": {
@@ -416,7 +416,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
-            "time": "2012-12-22 15:52:39",
+            "time": "2012-12-24 14:53:00",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1760,7 +1760,7 @@
                     "Sonata\\UserBundle": ""
                 }
             },
-            "time": "2012-12-22 08:56:44"
+            "time": "2012-12-25 18:33:10"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1868,12 +1868,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony-cmf/RoutingExtraBundle.git",
-                "reference": "1.0.0-alpha3"
+                "reference": "b923c17cf8c2987997f09689d51d2d6166ef5b2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/RoutingExtraBundle/archive/1.0.0-alpha3.zip",
-                "reference": "1.0.0-alpha3",
+                "url": "https://github.com/symfony-cmf/RoutingExtraBundle/archive/b923c17cf8c2987997f09689d51d2d6166ef5b2f.zip",
+                "reference": "b923c17cf8c2987997f09689d51d2d6166ef5b2f",
                 "shasum": ""
             },
             "require": {
@@ -1898,7 +1898,7 @@
                 "symfony-cmf/content-bundle": "To optionally use the configured value for 'content_basepath' from the CoreBundle",
                 "sonata-project/doctrine-phpcr-admin-bundle": "To provide an admin interface for the PHPCR ODM documents"
             },
-            "time": "2012-12-16 18:32:39",
+            "time": "2012-12-24 13:25:17",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
