@@ -33,8 +33,8 @@ class AppKernel extends Kernel
             new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Symfony\Cmf\Bundle\RoutingExtraBundle\SymfonyCmfRoutingExtraBundle(),
-            new Ruon\Bundle\RepairBundle\RuonRepairBundle(),
-            new Ruon\Bundle\NewsBundle\RuonNewsBundle(),
+            new Repair\SiteBundle\RepairSiteBundle(),
+            new Repair\NewsBundle\RepairNewsBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
         );

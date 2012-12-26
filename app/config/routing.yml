@@ -1,10 +1,10 @@
 ruon_news:
-    resource: "@RuonNewsBundle/Controller/"
+    resource: "@RepairNewsBundle/Controller/"
     type:     annotation
     prefix:   /
 
 ruon_repair:
-    resource: "@RuonRepairBundle/Controller/"
+    resource: "@RepairSiteBundle/Controller/"
     type:     annotation
     prefix:   /
 
