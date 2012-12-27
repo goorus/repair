@@ -5,19 +5,19 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="ruon.news.admin.news" class="Repair\NewsBundle\Admin\NewsAdmin">
+        <service id="repair.news.admin.news" class="Repair\NewsBundle\Admin\NewsAdmin">
             <tag name="sonata.admin" manager_type="orm" group="Новости" label="Новости"/>
             <argument/>
             <argument>Repair\NewsBundle\Entity\News</argument>
             <argument>SonataAdminBundle:CRUD</argument>
         </service>
-        <service id="ruon.news.admin.newsLink" class="Repair\NewsBundle\Admin\NewsLinkAdmin">
+        <service id="repair.news.admin.newsLink" class="Repair\NewsBundle\Admin\NewsLinkAdmin">
             <tag name="sonata.admin" manager_type="orm" show_in_dashboard="false" />
             <argument/>
             <argument>Repair\NewsBundle\Entity\NewsLink</argument>
             <argument>SonataAdminBundle:CRUD</argument>
         </service>
-        <service id="ruon.news.admin.newsCategory" class="Repair\NewsBundle\Admin\NewsCategoryAdmin">
+        <service id="repair.news.admin.newsCategory" class="Repair\NewsBundle\Admin\NewsCategoryAdmin">
             <tag name="sonata.admin" manager_type="orm" group="Новости" label="Категории новостей"/>
             <argument/>
             <argument>Repair\NewsBundle\Entity\NewsCategory</argument>

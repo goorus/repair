@@ -1,8 +1,8 @@
 <div class="news_list">
     {% for item in news %}
-        <div class="news_item">
-            <p class="news_title">{{ item.title }}</p>
-            <div class="news_short">{{ item.short }}</div>
+        <div class="news_list_item">
+            <p class="news_title"><a href="/news/{{item.id}}">{{ item.title }}</a></p>
+            <div class="news_announce">{{ item.announce }}</div>
         </div>
     {% endfor %}
 </div>
