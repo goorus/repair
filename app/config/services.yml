@@ -2,3 +2,4 @@ imports:
     - { resource: "@ApplicationSonataUserBundle/Resources/config/services.xml" }
     - { resource: "@RepairSiteBundle/Resources/config/services.xml" }
     - { resource: "@RepairNewsBundle/Resources/config/services.xml" }
+    - { resource: "@RepairFirmBundle/Resources/config/services.xml" }

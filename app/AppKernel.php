@@ -35,6 +35,7 @@ class AppKernel extends Kernel
             new Symfony\Cmf\Bundle\RoutingExtraBundle\SymfonyCmfRoutingExtraBundle(),
             new Repair\SiteBundle\RepairSiteBundle(),
             new Repair\NewsBundle\RepairNewsBundle(),
+            new Repair\FirmBundle\RepairFirmBundle(),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
         );

@@ -1,10 +1,15 @@
-ruon_news:
+repair_news:
     resource: "@RepairNewsBundle/Controller/"
     type:     annotation
     prefix:   /
 
-ruon_repair:
+repair_site:
     resource: "@RepairSiteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+repair_firm:
+    resource: "@RepairFirmBundle/Controller/"
     type:     annotation
     prefix:   /
 

@@ -1,0 +1,8 @@
+<div class="firms_list">
+    {% for item in firms %}
+        <div class="firm_list_item">
+            <p class="firm_title"><a href="/news/{{item.id}}">{{ item.title }}</a></p>
+            <div class="firm_contact">{{ item.contact }}</div>
+        </div>
+    {% endfor %}
+</div>
